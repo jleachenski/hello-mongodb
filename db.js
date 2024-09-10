@@ -1,0 +1,13 @@
+const mongoose = require("mongoose")
+
+const mongoDB = "mongodb+srv://<seu_usuario>:<sua_senha>@cluster0.osw4i.mongodb.net/pet"
+
+async function main() {
+    await mongoose.connect(mongoDB)
+}
+
+main()
+    .then(() => console.log("Conexão realizada com sucesso"))
+    .catch(err => console.log(err))
+
+module.exports = mongoose
