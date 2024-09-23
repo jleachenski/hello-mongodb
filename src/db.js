@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const mongoDB = "mongodb+srv://<username>:<password>@cluster0.osw4i.mongodb.net/pet"
+const mongoDB = "mongodb+srv://jleachenski:ISSIN64KOwheXth2@cluster0.osw4i.mongodb.net/"
 
 async function main() {
     await mongoose.connect(mongoDB)
